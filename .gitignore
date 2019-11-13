@@ -1,5 +1,10 @@
 #启用白名单
 /*
+
+#
+!/app
+!/pwsdkadvance
+
 #同步工程配置信息
 !.gitignore
 !build.gradle
@@ -7,7 +12,11 @@
 !project.properties
 !gradle.properties
 
+#
 !README.md
+
+#忽略工程配置
+*.iml
 
 #忽略工程输出
 **/obj
