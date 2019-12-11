@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--全局默认主题-->
+    <style name="ThemeGlobalMain">
+
+        <!--系统UI元素控制-->
+        <!--状态栏显示/隐藏-->
+        <!--        <item name="android:windowFullscreen">true</item>-->
+
+        <!--        <item name="android:windowShowWallpaper">true</item>-->
+        <item name="android:windowBackground">@color/color_background</item>
+
+        <!--隐藏Activity自带的标题栏-->
+        <item name="android:windowNoTitle">true</item>
+
+
+        <!--<item name="android:statusBarColor">@color/color_status_navi</item>-->
+        <!--<item name="android:navigationBarColor">@color/color_status_navi</item>-->
+    </style>
+
+</resources>
