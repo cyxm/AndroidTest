@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--全局默认主题-->
-    <style name="ThemeGlobalMain">
-
-        <!--系统UI元素控制-->
-        <!--状态栏显示/隐藏-->
-        <!--        <item name="android:windowFullscreen">true</item>-->
-
-        <!--        <item name="android:windowShowWallpaper">true</item>-->
+    <!--App启动属性-->
+    <style name="ThemeApp" >
+        <!--隐藏默认的标题栏-->
+        <item name="android:windowNoTitle">true</item>
+        <!--window背景-->
+        <item name="android:windowShowWallpaper">false</item>
         <item name="android:windowBackground">@color/color_background</item>
 
-        <!--隐藏Activity自带的标题栏-->
-        <item name="android:windowNoTitle">true</item>
+<!--        <item name="colorBackgroundFloating">@android:color/white</item>-->
+    </style>
 
+    <!--基础主题,包含所有属性,防止运行时属性缺少导致报错-->
+    <style name="ThemeBase" parent="ThemeApp">
+        <!--显示标题栏-->
+        <item name="android:windowFullscreen">false</item>
+    </style>
 
-        <!--<item name="android:statusBarColor">@color/color_status_navi</item>-->
-        <!--<item name="android:navigationBarColor">@color/color_status_navi</item>-->
+    <!--全局默认主题-->
+    <style name="ThemeShowDefault" parent="ThemeBase" />
+
+    <style name="ThemeShowTrans" parent="ThemeBase">
+        <!--window背景-->
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
     </style>
 
 </resources>
