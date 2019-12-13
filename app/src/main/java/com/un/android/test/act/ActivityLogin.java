@@ -14,6 +14,5 @@ public class ActivityLogin extends ActivityTheme {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.layout_window_login);
-
 	}
 }

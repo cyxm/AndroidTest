@@ -24,7 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/ThemeApp"
         android:usesCleartextTraffic="true"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
 
         <activity android:name=".act.ActivityLogin">
             <intent-filter>
@@ -35,22 +35,5 @@
         </activity>
 
         <activity android:name=".act.ActivityIntroduce" />
-
-        <!--<activity android:name=".act.ChronoActivity3">-->
-        <!--<intent-filter>-->
-        <!--<action android:name="android.intent.action.MAIN" />-->
-
-        <!--<category android:name="android.intent.category.LAUNCHER" />-->
-        <!--</intent-filter>-->
-        <!--</activity>-->
-        <!--<activity-->
-        <!--android:name=".act.ActivityTemplateLogin"-->
-        <!--android:screenOrientation="portrait">-->
-        <!--&lt;!&ndash;<intent-filter>&ndash;&gt;-->
-        <!--&lt;!&ndash;<action android:name="android.intent.action.MAIN" />&ndash;&gt;-->
-
-        <!--&lt;!&ndash;<category android:name="android.intent.category.LAUNCHER" />&ndash;&gt;-->
-        <!--&lt;!&ndash;</intent-filter>&ndash;&gt;-->
-        <!--</activity>-->
     </application>
 </manifest>
