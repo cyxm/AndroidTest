@@ -21,20 +21,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
-    sourceSets {
-        main {
-            java.srcDirs = ['src/main/java']
-            res.srcDirs = [
-                    'src/main/res/default',
-                    'src/main/res/layout_custom',
-                    'src/main/res/drawable_vector',
-                    'src/main/res/string_common',
-                    'src/main/res/drawable_icon',
-            ]
-        }
-    }
-
 }
 
 dependencies {
