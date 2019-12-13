@@ -1,6 +1,6 @@
 package com.un.android.test.component;
 
-import android.app.Application;
+import com.pw.sdk.component.AppBase;
 
-public class AppProject extends Application {
+public class AppProject extends AppBase {
 }

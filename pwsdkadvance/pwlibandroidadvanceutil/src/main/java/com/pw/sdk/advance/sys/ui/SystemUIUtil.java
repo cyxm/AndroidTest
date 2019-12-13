@@ -1,4 +1,4 @@
-package com.un.android.test.util;
+package com.pw.sdk.advance.sys.ui;
 
 import android.graphics.Color;
 import android.os.Build;
@@ -10,26 +10,6 @@ import android.view.WindowManager;
  * 系统UI处理工具类
  */
 public class SystemUIUtil {
-
-	/**
-	 * 设置状态栏颜色
-	 *
-	 * @param window
-	 * @param color
-	 *
-	 * @return 设置功能是否支持
-	 */
-	public static boolean setStatusBarColor(Window window, int color) {
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-			window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-			window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-			window.setStatusBarColor(color);
-			return true;
-		} else {
-			//do nothing:unsuport feature
-			return false;
-		}
-	}
 
 	/**
 	 * 设置状态栏完全透明
@@ -46,6 +26,26 @@ public class SystemUIUtil {
 			int flagTranslucentStatus = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
 			attributes.flags |= flagTranslucentStatus;
 			window.setAttributes(attributes);
+			return true;
+		} else {
+			//do nothing:unsuport feature
+			return false;
+		}
+	}
+
+	/**
+	 * 设置状态栏颜色
+	 *
+	 * @param window
+	 * @param color
+	 *
+	 * @return 设置功能是否支持
+	 */
+	public static boolean setStatusBarColor(Window window, int color) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+			window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+			window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+			window.setStatusBarColor(color);
 			return true;
 		} else {
 			//do nothing:unsuport feature

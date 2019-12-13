@@ -1,6 +1,6 @@
 package com.pw.sdk.advance.res;
 
-public class ResColor {
+public class RepoColor {
 
 	public static final int COLOR_HALF_TRANSPARENT_BLACK = 0x7F000000;
 

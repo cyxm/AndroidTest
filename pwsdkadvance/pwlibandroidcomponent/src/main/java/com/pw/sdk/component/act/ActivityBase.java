@@ -6,12 +6,12 @@ import android.os.Looper;
 import android.os.MessageQueue;
 
 import androidx.annotation.Nullable;
-import androidx.fragment.app.FragmentActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * 基础Activity
  */
-public class ActivityBase extends FragmentActivity {
+public abstract class ActivityBase extends AppCompatActivity {
 
 	protected Activity mActivitySelf;
 
@@ -20,6 +20,10 @@ public class ActivityBase extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 
 		mActivitySelf = this;
+
+		onThemeSetup();
+
+		onWindowSetup();
 
 		Looper.myQueue().addIdleHandler(new MessageQueue.IdleHandler() {
 			@Override
@@ -31,9 +35,22 @@ public class ActivityBase extends FragmentActivity {
 	}
 
 	/**
-	 * onCreate后UI初始化成功后的回调,可在此处获取View尺寸
+	 * UI初始化成功后的回调
 	 */
 	protected void onAfterUIInited() {
 	}
 
+	/**
+	 * 设置UI主题
+	 */
+	protected void onThemeSetup() {
+
+	}
+
+	/**
+	 * 设置Window属性
+	 */
+	protected void onWindowSetup() {
+
+	}
 }

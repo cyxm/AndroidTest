@@ -1,6 +1,6 @@
 package com.pw.sdk.advance.res;
 
-public class ResDrawable {
+public class RepoDrawable {
 
 //	public static void get(){
 	//		DrawableCompat

@@ -26,13 +26,15 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".component.ActivitySplash">
+        <activity android:name=".act.ActivityLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".act.ActivityIntroduce" />
 
         <!--<activity android:name=".act.ChronoActivity3">-->
         <!--<intent-filter>-->
