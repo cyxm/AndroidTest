@@ -7,13 +7,12 @@ import androidx.annotation.Nullable;
 import com.un.android.test.R;
 import com.un.android.test.component.ActivityTheme;
 
-
-public class ActivityIntroduce extends ActivityTheme {
+public class ActivityRegister extends ActivityTheme {
 
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.layout_window_login);
+		setContentView(R.layout.layout_window_register);
 	}
 }

@@ -1,0 +1,17 @@
+android {
+    sourceSets {
+        ipc360pro {
+            java.srcDirs = ['src/flavors/custom/ipc360pro/java']
+            res.srcDirs = [
+                    'src/flavors/custom/ipc360pro/res_custom_depend/drawable_launcher',
+                    'src/flavors/custom/ipc360pro/res_custom_depend/drawable_logo',
+                    'src/flavors/custom/ipc360pro/res_custom_depend/string_custom'
+            ]
+        }
+    }
+    productFlavors {
+        ipc360pro {
+            applicationId 'com.ipc360pro'
+        }
+    }
+}

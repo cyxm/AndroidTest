@@ -1,5 +1,12 @@
 apply plugin: 'com.android.application'
 
+apply from: '/flavor_config.gradle'
+
+apply from: '/flavors/market/googleplay/build_flavor.gradle'
+//apply from: '/flavors/market/othermarket/build_flavor.gradle'
+
+apply from: '/flavors/custom/ipc360pro/build_flavor.gradle'
+
 android {
     compileSdkVersion 28
 

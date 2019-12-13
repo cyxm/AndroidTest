@@ -1,0 +1,8 @@
+android {
+    sourceSets {
+        othermarket {
+            java.srcDirs = ['src/flavors/market/othermarket/java']
+            res.srcDirs = ['src/flavors/market/othermarket/res']
+        }
+    }
+}

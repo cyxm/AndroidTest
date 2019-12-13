@@ -1,0 +1,23 @@
+//不同特征维度配置
+android {
+    defaultConfig {
+        flavorDimensions "custom", "market"
+    }
+
+    //发布市场版本
+    productFlavors {
+        googleplay {
+            dimension "market"
+        }
+        othermarket {
+            dimension "market"
+        }
+    }
+
+    //定制版本
+    productFlavors {
+        ipc360pro {
+            dimension "custom"
+        }
+    }
+}

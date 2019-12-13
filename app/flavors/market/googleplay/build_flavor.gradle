@@ -1,0 +1,8 @@
+android {
+    sourceSets {
+        googleplay {
+            java.srcDirs = ['src/flavors/market/googleplay/java']
+            res.srcDirs = ['src/flavors/market/googleplay/res']
+        }
+    }
+}
